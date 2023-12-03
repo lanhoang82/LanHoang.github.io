@@ -75,7 +75,8 @@
 									</div>
 								</section>
 
-							<!-- Section -->
+
+								<!-- Section -->
 								<section>
 									<header class="major">
 										<h2>Certifications</h2>
@@ -84,41 +85,61 @@
 										/* Flex container to align items in a horizontal line */
 										.certificates-container {
 											display: flex;
+											flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
 											justify-content: space-between; /* Adjust as needed */
 											max-width: 900px; /* Adjust the maximum width of the container */
-											margin: 0 auto; /* Center the container */
+											margin: 100 auto;
 										}
-									
+
 										/* Styling for each certificate */
 										.certificate-container {
 											width: 300px;
 											height: 270px;
 											overflow: hidden;
+											margin-bottom: 40px; /* Optional: Adds some spacing between certificates */
 										}
-									
+
 										/* Styling specifically for the Microsoft certificate */
 										.certificate-container.microsoft {
 											border: 1px solid rgba(169, 169, 169, 0.5); /* Faded grey border */
 											border-radius: 8px; /* Optional: Adds rounded corners */
-											overflow: hidden;
+											margin-right: 1mm; /* Adjust the margin-right to add space between Microsoft certificates */
+
 										}
-									
+
 										.certificate-image {
 											width: 100%;
 											height: 100%;
 											object-fit: cover;
 										}
+
 									</style>
 									<div data-iframe-width="300" data-iframe-height="270" data-share-badge-id="ca524976-a0b1-4b08-a9da-7eda70ff20f0" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 									<div data-iframe-width="300" data-iframe-height="270" data-share-badge-id="f0ad98f5-a8c8-41fd-b0c6-b98501bf93c4" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-									    <!-- Custom Microsoft Certificate -->
-									<div class="certificate-container">
-										<!-- Replace the following anchor tag with your badge image URL and certification URL -->
-										<a href="https://learn.microsoft.com/api/credentials/share/en-us/LanHoang-7722/4D27BBA64F80C998?sharingId=B5ADBDD50A32A7F3" target="_blank" rel="noopener noreferrer">
-											<img class="certificate-image" src="images/PL300 Badge.png" alt="Custom Badge" style="width: 300px; height: 270px;">
-										</a>
+									<!-- Main Certificates Container -->
+									<div class="certificates-container">
+										
+										<!-- Microsoft Certificates Container -->
+										<div class="certificates-container">
+											<!-- First Microsoft Certificate -->
+											<div class="certificate-container microsoft">
+												<a href="https://learn.microsoft.com/api/credentials/share/en-us/LanHoang-7722/4D27BBA64F80C998?sharingId=B5ADBDD50A32A7F3" target="_blank" rel="noopener noreferrer">
+													<img class="certificate-image" src="images/PL300 badge port.png" alt="Custom Badge">
+												</a>
+											</div>
+
+											<!-- Second Microsoft Certificate -->
+											<div class="certificate-container microsoft">
+												<a href="https://learn.microsoft.com/en-us/users/lanhoang-7722/credentials/347a76020c312bf" target="_blank" rel="noopener noreferrer">
+													<img class="certificate-image" src="images/AZ900 badge port.png" alt="Custom Badge">
+												</a>
+											</div>
+											
+										</div>
 									</div>
 								</section>
+
+							
 							<!-- Section -->
 								<section>
 									<header class="major">
